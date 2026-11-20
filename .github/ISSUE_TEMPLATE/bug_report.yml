@@ -1,0 +1,100 @@
+name: Bug report
+description: Something in Penned In isn't working as it should.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! The more detail you give, the quicker it can be fixed.
+
+  - type: dropdown
+    id: minecraft
+    attributes:
+      label: Minecraft version and loader
+      options:
+        - 1.20.1 (Forge)
+        - 1.21.1 (NeoForge)
+        - 26.1.2 (NeoForge)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Penned In version
+      description: Shown in the mod list, or in the jar's file name (for example pennedin-1.21.1-neoforge-2.0.1.jar).
+      placeholder: "2.0.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where does it happen?
+      options:
+        - Singleplayer
+        - On a server
+        - Both
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: modpack
+    attributes:
+      label: Modpack
+      description: The modpack's name and version, or "my own pack" / "Penned In on its own".
+      placeholder: "All The Mods 10 v4.2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the bug. Screenshots or videos help a lot (drag them into this box).
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be reproduced?
+      description: Step by step, if you know. Say if it happens every time or only sometimes.
+      placeholder: |
+        1. Place a Gold pen
+        2. Catch two llamas
+        3. ...
+
+  - type: input
+    id: log
+    attributes:
+      label: Log link
+      description: |
+        Upload your log to [mclo.gs](https://mclo.gs) and paste the link here.
+        Your log is `logs/latest.log` in your game folder (or `logs/debug.log` on some launchers). If the game crashed, upload the file from `crash-reports` too.
+      placeholder: "https://mclo.gs/..."
+
+  - type: textarea
+    id: mods
+    attributes:
+      label: Mod list
+      description: Only needed for your own pack, or if asked. A screenshot of your mod list or a list pasted here is fine.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I'm using the latest version of Penned In for my Minecraft version.
+          required: true
+        - label: I've checked the open issues and this hasn't already been reported.
+          required: true
