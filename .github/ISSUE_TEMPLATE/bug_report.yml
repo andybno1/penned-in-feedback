@@ -40,6 +40,26 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Pen tier
+      description: If the bug involves a pen, which tier is it? Wooden and Iron pens only take vanilla animals; modded animals need Gold or better.
+      options:
+        - Wooden
+        - Iron
+        - Gold
+        - Diamond
+        - Netherite
+        - Not about a pen / not sure
+
+  - type: input
+    id: animal
+    attributes:
+      label: Animal in the pen
+      description: Which animal (and which mod it's from), any modules fitted, and whether it's a Hopper Pen.
+      placeholder: "Dyenamics sheep, Speed Module, Hopper Pen"
+
   - type: input
     id: modpack
     attributes:
