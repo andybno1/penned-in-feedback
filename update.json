@@ -8,13 +8,7 @@
     "26.1.2-latest": "2.0.2",
     "26.1.2-recommended": "2.0.2"
   },
-  "1.20.1": {
-    "2.0.2": "Owner fixes: only a pen's owner (and players they invite) can break it, let animals out, dye or upgrade it. In-game update notice."
-  },
-  "1.21.1": {
-    "2.0.2": "Owner fixes: only a pen's owner (and players they invite) can break it, let animals out, dye or upgrade it. In-game update notice."
-  },
-  "26.1.2": {
-    "2.0.2": "Owner fixes: only a pen's owner (and players they invite) can break it, let animals out, dye or upgrade it. In-game update notice."
-  }
+  "1.20.1": {},
+  "1.21.1": {},
+  "26.1.2": {}
 }
